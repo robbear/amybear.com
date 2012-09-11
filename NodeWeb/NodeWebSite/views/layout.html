@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; intial-scale=1.0; maximum-scale=1.0" />
+    <title>{{PageTitle}}</title>
+    <link media="screen, print" href="/styles/styles.css" rel="Stylesheet" type="text/css" />
+    <link media="handheld, screen and (max-width:480px), screen and (max-device-width:480px)" href="/styles/styles_mobile.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript" src="/scripts/hflog.js"></script>
+    <script type="text/javascript" src="/lib/jquery/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="/lib/jquery/jquery-ui-1.8.21.custom.min.js"></script>
+
+	<script type="text/javascript">
+		hfLog.enableLogging(true);
+		hfLog.log('Logging is enabled on the client');
+	</script>
+    {{> HeaderContent}}
+</head>
+<body>
+	<div>
+		Blah: This appears on every page.
+	</div>
+    <div class="content">
+        {{> BodyContent}}
+    </div>
+</body>
+</html>
